@@ -1,9 +1,9 @@
 pipeline {
   agent any
-    tools{
+  /*  tools{
         jdk 'java'
         maven 'maven'
-    }
+    }*/
   
   stages {
      
@@ -17,7 +17,8 @@ pipeline {
                 stage("Code Checkout"){
             steps {
                 script {
-                                                                
+                                  sh "java --version "
+  sh "mvn -version
                     sh "git clone https://github.com/mhali922/InsuranceManagement.git"
                    
                     
